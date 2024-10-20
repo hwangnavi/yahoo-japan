@@ -1,0 +1,12 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_125_5)">
+<rect width="26" height="26" fill="white"/>
+<circle cx="13" cy="13" r="13" fill="#FF2020"/>
+<path d="M12.9821 20C12.4661 20 12.2081 19.712 12.2081 19.136V9.362L10.5521 10.406C10.0601 10.73 9.68806 10.67 9.43606 10.226C9.14806 9.782 9.25006 9.41 9.74206 9.11L12.0821 7.67C12.4061 7.466 12.7541 7.364 13.1261 7.364C13.5341 7.364 13.7381 7.652 13.7381 8.228V19.136C13.7381 19.712 13.4861 20 12.9821 20Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_125_5">
+<rect width="26" height="26" fill="white"/>
+</clipPath>
+</defs>
+</svg>
