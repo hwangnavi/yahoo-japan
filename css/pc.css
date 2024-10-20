@@ -1,0 +1,920 @@
+.m{display: none;}
+.pc{display: block;}
+
+body{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#wrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{}
+header .wrap{}
+header .wrap .headtop{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .wrap .headtop h1{}
+header .wrap .headtop h1 a{}
+header .wrap .headtop h1 a img{height: 80px;}
+
+header .wrap .headbtm{
+    display: flex;
+    gap: 20px;
+}
+header .wrap .headbtm .tabmenu{
+    width: 200px;
+    position: relative;
+}
+header .wrap .headbtm .tabmenu button{
+    display: flex;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    border: 1px solid #DFDFDF;
+    border-radius: 8px;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+    background-image: url(../image/arrow.svg);
+    background-repeat: no-repeat;
+    background-position:  150px 20px;
+    background-size: 25px;
+}
+header .wrap .headbtm .tabmenu .tabshow{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding-top: 10px;
+}
+header .wrap .headbtm .tabmenu .tabshow.show{
+    display: block;
+}
+header .wrap .headbtm .tabmenu .tabshow ul{
+    width: 200px;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+}
+header .wrap .headbtm .tabmenu .tabshow ul li{}
+header .wrap .headbtm .tabmenu .tabshow ul li a{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header .wrap .headbtm .tabmenu .tabshow ul li a img{}
+header .wrap .headbtm .tabmenu .tabshow ul li a p{}
+header .wrap .headbtm .search{
+    border: 1px solid #E1E1E1;
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    padding: 0 20px;
+}
+header .wrap .headbtm .search form .srhbox{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .wrap .headbtm .search form .srhbox input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    padding-left: 20px;
+}
+header .wrap .headbtm .search form .srhbox button{
+    height: 46px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #E8D8FF;
+    cursor: pointer;
+    text-wrap: nowrap;
+    padding: 8px 12px;
+}
+header .wrap .headbtm .search form .srhbox button:last-child{
+    background-color: #AB83E1;
+    color: #fff;
+    font-size: 18px;
+}
+/* header 끝 */
+main{
+    max-width: 1320px;
+    padding-top: 20px;
+    gap: 20px;
+}
+main .main1{
+   display: flex;
+    gap: 20px;
+}
+
+.main1 .ranking,
+.main1 .weather{
+    width:calc((100% - 40px) / 3);
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+
+}
+
+.main1 .weather h2{
+    padding: 20px 20px 10px;
+    font-size: 18px;
+}
+.main1 .weather .weathertab{
+    width: 100%;
+} 
+.main1 .weather .weathertab .wetab{
+    padding: 10px 20px;
+    justify-content: space-between;
+    display: flex;
+} 
+.main1 .weather .weathertab .wetab button{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 12px;
+} 
+.main1 .weather .weathertab .wetab button:hover{
+    background-color: #f4f4f4;
+    border-radius: 500px;
+}
+.main1 .weather .weathertab .wecontent{}
+.main1 .weather .weathertab .wecontent .wecon1 .wecon1box{
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+.main1 .weather .weathertab .wecontent .wecon1 .wecon1box .webox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main1 .weather .weathertab .wecontent .wecon1 .wecon1box .webox a{
+  
+}
+.main1 .weather .weathertab .wecontent .wecon1 .wecon1box .webox a h5{
+    text-align: center;
+    font-size: 14px;
+}
+.main1 .weather .weathertab .wecontent .wecon1 .wecon1box .webox a img{
+    width: 80px;
+    height: 45px;
+    object-fit: contain;
+}
+.main1 .weather .weathertab .wecontent .wecon1 .wecon1box .webox a p{
+    text-align: center;
+    font-size: 12px;
+}
+.main1 .weather .weathertab .wecontent .wecon1 .weboxtxt{
+   padding: 10PX 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.main1 .weather .weathertab .wecontent .wecon1 .weboxtxt button{
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 3px;
+    text-wrap: nowrap;
+}
+.main1 .weather .weathertab .wecontent .wecon1 .weboxtxt button img{width: 22px;}
+.main1 .weather .weathertab .wecontent .wecon1 .weboxtxt button:first-child img{width: 22px; color: red;}
+
+.main1 .weather .weathertab .wecontent .wecon2{
+    display: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+   margin-top: 20px;
+   padding: 20px;
+}
+.main1 .weather .weathertab .wecontent .wecon2 h5{font-size: 16px;}
+.main1 .weather .weathertab .wecontent .wecon2 p{
+    font-size: 14px;
+    padding-top: 5px;
+}
+.main1 .weather .weathertab .wecontent .wecon2 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4px 12px;
+    background-color: #AB83E1;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.main1 .weather .weathertab .wecontent .wecon3{
+    display: none;
+    margin: 20px ;
+}
+.main1 .weather .weathertab .wecontent .wecon3 h5{}
+.main1 .weather .weathertab .wecontent .wecon3 h5 a{display: flex; gap: 10px;}
+.main1 .weather .weathertab .wecontent .wecon3 h5 a img{}
+.main1 .weather .weathertab .wecontent .wecon3 h5 a img p{padding-left: 10px;}
+.main1 .weather .weathertab .wecontent .wecon3 .notice{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+.main1 .weather .weathertab .wecontent .wecon4{
+    margin: 20px;
+    display: none;
+}
+.main1 .weather .weathertab .wecontent .wecon4 .subway{
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+.main1 .weather .weathertab .wecontent .wecon4 .subway a{display: flex;}
+.main1 .weather .weathertab .wecontent .wecon4 .subway a img{}
+.main1 .weather .weathertab .wecontent .wecon4 .subway a p{padding-left: 10px;}
+.main1 .weather .weathertab .wecontent .wecon4 .subway a p:last-child{ 
+    color: red;
+    margin-left: auto;
+}
+.main1 .weather .weathertab .wecontent .wecon4 .subway:last-child a p:last-child{color: purple;}
+.main1 .weather .weathertab .wecontent .wecon4 .subway a img{height: 25px;}
+
+
+
+.main1 .log{
+    width:calc((100% - 40px) / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main1 .log .logup{
+    height: 248px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+.main1 .log .logup .logtop h2{
+    padding: 20px 20px 10px;
+    font-size: 18px;
+}
+.main1 .log .logup .logtop .loginbox{padding:  10px 20px 10px;}
+#login_form {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+}
+.login_input input{
+    width: 100%;
+}
+.login_input input,
+.submit_button input:first-child
+{
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+    text-indent: 7px;
+    padding: 7px;
+}
+.submit_button input:first-child{
+    width: 100%;
+}
+.submit_button input:last-child{
+    width: 70px;
+    height: 35px;
+    background-color: #E8D8FF;
+    border-radius: 4px;
+}
+.log .logtop .loginbox .submit_button{
+    padding-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main1 .log .logbtm{
+    padding: 10px 20px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-wrap: nowrap;
+}
+
+.main1 .log .logbtm a:hover{
+    cursor: pointer;
+    border-radius: 500px;
+    background-color: #f4f4f4;
+}
+.main1 .log .logdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  10px 20px 20px;
+    width: 100%;
+    height: 95px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+.main1 .ranking{ width:calc((100% - 40px) / 3);}
+.main1 .ranking .rankingtop{
+    padding: 20px 20px 10px;
+    display: flex;
+}
+.main1 .ranking .rankingtop h2{font-size: 18px;}
+.main1 .ranking .rankingtop button{
+    margin-left: auto;
+    font-size: 12px;
+    display: flex;
+}
+.main1 .ranking .rankingtop button img{width: 25px;}
+.main1 .ranking .rankingbtm{}
+.mySwiper{width: 100%; height: 280px;}
+.swiper-wrapper{}
+.swiper-slide{padding: 10px 20px;}
+.swiper-slide .slidebox{
+    border-radius: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+.swiper-slide .slidebox a{
+    display: flex;
+    gap: 5px;
+}
+.swiper-slide .slidebox a img{}
+.swiper-slide .slidebox a p{}
+/* main1끝 */
+.main2{
+    padding-top: 20px;
+}
+.main2 .wrap{
+    gap: 20px;
+    display: flex;
+}
+.main2 .wrap .news{
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    width: calc((100% - 20px) / 3 *2);
+}
+.main2 .wrap .news h2{ 
+    padding: 20px 20px 10px;
+    font-size: 18px;
+}
+.main2 .wrap .news .newstab{width: 100%;}
+.main2 .wrap .news .newstab .newtab{
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.main2 .wrap .news .newstab .newtab button{
+    font-size: 16px;
+    padding: 4px 12px;
+}
+.main2 .wrap .news .newstab .newtab button:hover{
+    border-radius: 500px;
+    background-color: #f4f4f4;
+}
+.main2 .wrap .news .newstab .newcontent{padding: 10px 20px;}
+.main2 .wrap .news .newstab .newcontent .all .newswrap{
+   display: flex;
+   gap: 20px;
+   overflow: auto;
+   justify-content: center;
+}
+
+.main2 .wrap .news .newstab .newcontent .all .newconbox{}
+.main2 .wrap .news .newstab .newcontent .all .newconbox a{
+ 
+}
+
+.main2 .wrap .news .newstab .newcontent .all .newconbox a img{
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.main2 .wrap .news .newstab .newcontent .all .newconbox a p{
+    padding: 20px 0;
+  display: block;
+  text-overflow: ellipsis;
+  display: block;
+  width: 240px;
+  overflow: hidden;
+  text-wrap: nowrap;
+  font-size: 14px;
+}
+.main2 .wrap .news .newstab .newcontent .newscon2,
+.main2 .wrap .news .newstab .newcontent .newscon3,
+.main2 .wrap .news .newstab .newcontent .newscon4,
+.main2 .wrap .news .newstab .newcontent .newscon5,
+.main2 .wrap .news .newstab .newcontent .newscon6,
+.main2 .wrap .news .newstab .newcontent .newscon7{display: none;}
+
+.main2 .news .newsbtn{
+    padding: 10px 20px 20px;
+   display: flex;
+   justify-content: center;
+}
+.main2 .news .newsbtn button{
+    background-color: #f4f4f4;
+    padding:4px 20px ;
+    border-radius: 500px;
+}
+
+
+.main2 .sports{
+    width: calc((100% - 20px) / 3);
+    border:  1px solid #e1e1e1;
+    border-radius: 8px;
+}
+.main2 .sports .sportstop{
+    display: flex;
+    padding: 20px 20px 10px;
+}
+.main2 .sports .sportstop .sportstit{margin-right: auto;}
+.main2 .sports .sportstop .sportstit h2{font-size: 18px;}
+.main2 .sports .sportstop .sportsdate{ margin-left: auto;}
+.main2 .sports .sportstop .sportsdate button{
+   padding: 10px 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+}
+.main2 .sports .sportsmid{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main2 .sports .sportsmid .midleft{
+    display: flex;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 500px;
+    padding: 5px;
+    align-items: center;
+}
+.main2 .sports .sportsmid .midleft .sportsimg2{
+    text-align: center;
+    font-size: 12px;
+
+}
+.main2 .sports .sportsmid .midleft .sportsimg1 img,
+.main2 .sports .sportsmid .midleft .sportsimg3 img{width: 73px;}
+
+.main2 .sports .sportsmid .midright{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.main2 .sports .sportsmid .midright .sportsimg4,
+.main2 .sports .sportsmid .midright .sportsimg5{display: flex;}
+.main2 .sports .sportsmid .midright .sportsimg4 button{
+    background-color: #DBE2FF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main2 .sports .sportsmid .midright .sportsimg5 button{
+    background-color: #AB83E1;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main2 .sports .sportsmid .midright .sportsimg4 p,
+.main2 .sports .sportsmid .midright .sportsimg5 p{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.main2 .sports .sportsbtm{
+    padding: 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.main2 .sports .sportsbtm .sportstxt{
+    display: flex;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.main2 .sports .sportsbtm .sportstxt .sportsnews{
+    padding-left: 5px;
+    height: 52px;
+}
+.main2 .sports .sportsbtm .sportstxt .sportsnews h5{font-size: 14px;}
+.main2 .sports .sportsbtm .sportstxt .sportsnews p{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 46px;
+}
+.main2 .sports .sportsbtm .sportstxt img{
+    border-radius: 8px;
+    object-fit: cover;
+}
+.main2 .sports .sportbtn{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 20px;
+}
+.main2 .sports .sportbtn button{
+    background-color: #f4f4f4;
+    padding:4px 20px ;
+    border-radius: 500px;
+
+}
+.section{
+    padding-top: 20px;
+}
+.section .wrap{
+    display: flex;
+    gap: 20px;
+    background-color: #F7F7F7;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+.section .wrap .secimg{
+    width: calc((100% - 40PX) / 3);
+    justify-content: center;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section .wrap .secimg img{
+    width:100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.section .wrap .secimg .sectxt{
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section .wrap .secimg .sectxt p{
+    text-align: center;
+    margin-left: 5px;
+}
+/* seciton끝 */
+
+.article{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.article .artleft{
+    width:calc((100% - 20px) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.article .artleft .artleft1{
+    width: 100%;
+    height: 380px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+.article .artleft .artleft1 .booktit{
+    display: flex;
+    padding: 20px 20px 10px;
+}
+.article .artleft .artleft1 .booktit h2{
+    font-size: 18px;
+}
+.article .artleft .artleft1 .booktit button{
+    display: flex;
+    margin-left: auto;
+    background-color: #f4f4f4;
+    padding: 4px 20px;
+    border-radius: 400px;
+}
+.article .artleft .artleft1 .booktab .bookbtn{
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-wrap: nowrap;
+    justify-content: space-between;
+}
+.article .artleft .artleft1 .booktab .bookbtn button{
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 12px;
+}
+.article .artleft .artleft1 .booktab  .bookbtn button:hover{
+    background-color: #f4f4f4;
+    border-radius: 500px;
+}
+.article .artleft .artleft1 .booktab .bookcontent .bookcon2,
+.article .artleft .artleft1 .booktab .bookcontent .bookcon3,
+.article .artleft .artleft1 .booktab .bookcontent .bookcon4,
+.article .artleft .artleft1 .booktab .bookcontent .bookcon5{display: none;}
+.article .artleft .artleft1 .booktab .bookcontent{}
+.article .artleft .artleft1 .booktab .bookcontent .bookcontainer{
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+    padding: 10px 20px;
+}
+.article .artleft .artleft1 .booktab .bookcontent .bookcontainer .bookcon{
+    width: calc((100% - 60px) / 4);
+}
+.article .artleft .artleft1 .booktab .bookcontent .bookcontainer .bookcon a{}
+.article .artleft .artleft1 .booktab .bookcontent .bookcontainer .bookcon a img{
+    object-fit: cover;
+    border-radius: 4px;
+}
+.article .artleft .artleft1 .booktab .bookcontent .bookcontainer .bookcon a p{
+    padding: 20px 0;
+    display: block;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-wrap: nowrap;
+    font-size: 14px;
+}
+
+.article .artleft .artleft3,
+.article .artleft .artleft2{
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+}
+
+.article .artleft .artleft2{
+    display: flex;
+    height: 240px;
+    gap: 20px;
+    height: 100%;
+}
+.article .artleft .artleft2 h2{
+    padding: 20px 20px 10px;
+    font-size: 18px;
+    text-wrap: nowrap;
+}
+.article .artleft .artleft2 .artstore{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 20px 20px;
+}
+.article .artleft .artleft2 .artstore .store{
+    display: flex;
+    align-items: center;
+}
+.article .artleft .artleft2 .artstore .store button{
+    width: 100%;
+    display: flex;
+    border-radius: 500px;
+   background-color: #f4f4f4;
+   align-items: center;
+   gap: 5px;
+   padding: 10px;
+}
+.artstore .store img{
+
+}
+.article .artleft .artleft2 .artstore .store p{
+    display: flex;
+    text-align: center;
+
+}
+.article .artleft .artleft3 .music .musictit{
+    padding: 20px 20px 10px;
+    display: flex;
+}
+.article .artleft .artleft3 .music .musictit h2{
+    font-size: 18px;
+}
+.article .artleft .artleft3 .music .musictit .mtitimg{
+    display: flex;
+    margin-left: auto;
+}
+.article .artleft .artleft3 .music .musictit .mtitimg img{}
+.article .artleft .artleft3 .music .musicclick{
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px 20px;
+    justify-content: center;
+}
+.article .artleft .artleft3 .music .musicclick a:hover{
+    filter: brightness(0.5);
+}
+.article .artleft .artleft3 .music .musicclick .musicclick1{
+    width: calc(100% / 4);
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article .artleft .artleft3 .music .musicclick .musicclick1 a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article .artleft .artleft3 .music .musicclick .musicclick1 a img{
+    border-radius: 50%;
+}
+.article .artleft .artleft3 .music .musicclick .musicclick1 a p{
+    padding: 20px 0;
+    display: block;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+/* artleft 끝 */
+.article .artright{
+    width:calc((100% - 20px) / 2);
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+.article .artright .shopping{
+    width: 100%;
+    height: 640px;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+}
+.article .artright .shopping .shoptit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px;
+}
+.article .artright .shopping .shoptit h2{font-size: 18px;}
+.article .artright .shopping .shoptit button{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.article .artright .shopping .shoptab{}
+.article .artright .shopping .shoptab .shopbtn{
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.article .artright .shopping .shoptab .shopbtn button{
+    font-size: 16px;
+    padding: 4px 12px;
+    text-wrap: nowrap;
+}
+.article .artright .shopping .shoptab .shopbtn button:hover{
+    background-color: #f4f4f4;
+    border-radius: 500px;
+}
+.article .artright .shopping .shoptab .shopcontent{
+    padding: 10px 20px;
+    width: 100%;
+}
+.article .artright .shopping .shoptab .shopcontent .shopcon2,
+.article .artright .shopping .shoptab .shopcontent .shopcon3{display: none;}
+.article .artright .shopping .shoptab .shopcontent .shopall .shopcontainer{}
+.article .artright .shopping .shoptab .shopcontent .shopall .shopcontainer .shopbtm,
+.article .artright .shopping .shoptab .shopcontent .shopall .shopcontainer .shoptop{
+    display: flex;
+    gap: 20px;
+}
+.article .artright .shopping .shoptab .shopcontent .shopall .shopcontainer .shopcon{
+    width: calc((100% - 40px) / 3);
+}
+
+.article .artright .shopping .shoptab .shopcontent .shopall .shopcontainer .shopcon a{}
+.article .artright .shopping .shoptab .shopcontent .shopall .shopcontainer .shopcon a img{    border-radius: 8px;}
+
+  
+.article .artright .shopping .shoptab .shopcontent .shopall .shopcontainer .shopcon a p{
+    padding: 20px 0;
+    display: block;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-wrap: nowrap;
+    font-size: 14px;
+    text-align: center;
+}
+.article .artright .shopping .shopmore{
+    display: flex;
+    justify-content: center;
+}
+.article .artright .shopping .shopmore button{
+    display: flex;
+    padding: 4px 20px;
+    background-color: #f4f4f4;
+    border-radius: 400px;
+}
+/* game */
+.article .artright .game{
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    height: 100%;
+}
+.article .artright .game .gametit{
+    display: flex;
+    padding: 20px 20px 10px;
+}
+.article .artright .game .gametit h2{
+    font-size: 18px;
+
+}
+.article .artright .game .gametit button{
+    margin-left: auto;
+    display: flex;
+    gap: 3px;
+    background-color: #f4f4f4;
+    padding: 4px 20px;
+    border-radius: 400px;
+}
+.article .artright .game .gametab{}
+.article .artright .game .gametab .gamebtn {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px ;
+}
+
+.article .artright .game .gametab .gamebtn button{
+    font-size: 16px;
+    padding: 4px 12px;
+}
+.article .artright .game .gametab .gamebtn button:hover{
+    background-color: #f4f4f4;
+    border-radius: 500px;
+}
+.article .artright .game .gametab .gamecontent{}
+.article .artright .game .gametab .gamecontent .gamecon1{}
+.article .artright .game .gametab .gamecontent .gamecon2, 
+.article .artright .game .gametab .gamecontent .gamecon3{display: none;} 
+
+.article .artright .game .gametab .gamecontent .gamecon1 .gamecontainer,
+.article .artright .game .gametab .gamecontent .gamecon2 .gamecontainer,
+.article .artright .game .gametab .gamecontent .gamecon3 .gamecontainer{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+   padding: 10px 20px;
+}
+.article .artright .game .gametab .gamecontent .gameall .gamecontainer .gamecon{
+    width: calc((100% - 80px) / 5);
+} 
+.article .artright .game .gametab .gamecontent .gameall .gamecontainer .gamecon a{} 
+.article .artright .game .gametab .gamecontent .gameall .gamecontainer .gamecon a img{
+    border-radius: 8px;
+    height: 95px;
+    object-fit: cover;
+}
+.article .artright .game .onlinegame{}
+.article .artright .game .onlinegame .wrap{
+    padding: 10px 20px;
+    display: flex;
+   gap: 20px;
+    justify-content: center;
+}
+.article .artright .game .onlinegame .wrap button{
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 400px;
+    padding: 4px 20px;
+}
+
+/* artlce 끝 */
+footer{
+    padding: 20px 0;
+}
+footer .wrap{
+    padding: 20px;
+    background-color:#F7F7F7 ;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .wrap .footertop{display: flex;}
+footer .wrap .footerbtm{}
+footer .wrap .footerbtm .footerbtm1{display: flex; gap: 20px;}
+footer .wrap .footerbtm .footerbtm2{display: flex; gap: 20px;}
+lor>
